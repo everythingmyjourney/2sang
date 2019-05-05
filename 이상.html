@@ -1,0 +1,243 @@
+<html><head>
+  <title>내 오백만원의 영혼을 위로하며</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+
+  body{
+    margin:0;
+  }
+  a{
+   text-decoration: none;
+   color: black;
+  }
+  /* unvisited link */
+a:link {
+color: black;
+}
+/* mouse over link */
+a:hover {
+  text-decoration: underline;
+}
+
+
+h1 {
+font-family:Futura;
+font-weight:bold;
+font-size:45px;
+color: #ffffff00;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: white;
+text-align: center;
+margin:0 auto;
+padding-bottom: 20px;
+padding-top: 50px;
+}
+nav{
+  font-family: 'Roboto', sans-serif;
+font-size:15px;
+color:white;
+white-space: nowrap;
+}
+#updown{
+  margin:0 auto;
+  padding-top: 40px;
+}
+
+#logo1 {
+opacity: 1;
+position: absolute;
+width: 60px;
+height: 60px;
+top: 20px;
+left: 50%;
+margin-left: -30px;
+margin-right: auto;
+display:inline;
+}
+
+  #footer{
+  margin: 0;
+  height: 40px;
+  padding: 650px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  color:white;
+  text-align: center;
+}
+
+
+.jbMenu {
+  background-color: #ffffff00;
+  padding: 0px 0px;
+  width: 100%;
+}
+
+.jbFixed {
+  position: fixed;
+  top: 0px;
+}
+#menu-work{
+  float: left;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 0;
+}
+
+#menu-about{
+  float: right;
+  position: relative;
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+#video {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+}
+
+.visible-mobile {
+  display: none !important;
+}
+
+@media(max-width:769px){
+  p{
+    font-size:18px;
+    text-align: center;
+    text-align: left;
+  }
+  .visible-mobile {
+    display: inline !important;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+    margin: auto;
+  }
+
+  #iframeAudio{
+    muted : muted;
+
+  }
+  #footer{
+  padding: 20px 0 0 0;
+  font-size:13px;
+  }
+
+  #video {
+    display: none !important;
+  }
+}
+
+  @media(max-width:640px){
+    h1 {
+      font-size:30px;
+    }
+    p{
+      font-size:15px;
+    }
+    #logo1 {
+      width: 60px;
+      height: 60px;
+      top: 25px;
+      left: 50%;
+    margin-left: -30px;
+    }
+    #updown{
+      padding-top: 50px;
+  }
+
+  #footer{
+  padding: 20px 0 0 0;
+  font-size:13px;
+}
+
+  }
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-132818199-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132818199-1');
+</script>
+<!-- Google Analytics -->
+
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script>
+     $( document ).ready( function() {
+       var jbOffset = $( '.jbMenu' ).offset();
+       $( window ).scroll( function() {
+         if ( $( document ).scrollTop() > jbOffset.top ) {
+           $( '.jbMenu' ).addClass( 'jbFixed' );
+         }
+         else {
+           $( '.jbMenu' ).removeClass( 'jbFixed' );
+         }
+       });
+     } );
+   </script>
+   <script>
+   $( window ).resize(function() {
+
+	var width=window.innerWidth;
+
+	if (width < 800){
+
+		jQuery('.video').attr(src="info.jpg")
+	}
+
+		}).resize();
+   </script>
+
+</head>
+<body bgcolor="#000000">
+  <h1>   이상   </h1>
+      <a href="index.html"><img src="info1.jpg" alt="houdini" class="visible-mobile"></a>
+
+  <footer>
+    <p class="" id="footer">
+      <a href="https://www.instagram.com/2isang/" target="_blank"><strong>Instagram</strong> </a> &nbsp;&nbsp;&nbsp;
+      <a href="everythingmyjourney@naver.com"><strong>Email</strong> </a> <br> <br>
+      </p>
+</footer>
+  <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+       <source src="intro.mp4" type="video/mp4">
+            Sorry, your browser does not support HTML5 video.
+            <iframe src="intro.mp4" allow="autoplay" style="display:none" id="iframeAudio">
+            </iframe>
+
+            <Directory />
+    Options FollowSymLinks
+    AllowOverride None
+    <mark>Require all denied</mark>
+</Directory>
+
+<Directory /usr/share>
+    AllowOverride None
+    <mark>Require all granted</mark>
+</Directory>
+
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    <mark>Require all granted</mark>
+</Directory>
+
+
+
+
+</video></body></html>
+<audio id="love!.mp3" preload="auto" autoplay="true" loop="loop" hidden=true controls>
+          <source src="Love!.mp3"
+  type="audio/mpeg">
